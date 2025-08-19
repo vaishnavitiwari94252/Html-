@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: #956464;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+.header h1:hover{
+  text-shadow: 2px 2px beige;
+text-decoration:underline;
+transition:0.4s;
+}
+.card p{
+font-weight: 550;
+    font-size: 18px;
+}
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+input[type=text] {
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url("C:\Users\meenu\OneDrive\Desktop\ssipmt\image\search-icon-png-5.png");
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 100%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color:#5b1d1d;
+  width:fit-content;
+  padding:10px;
+  margin-left:30px;
+   transition:1s;
+}
+.fakeimg:hover{
+transform:scale(1.1);
+z-index:2;
+}
+/* Add a card effect for articles */
+.card {
+  background-color:#956464;
+  padding: 15px;
+  margin-top: 20px;
+  width:100%;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background:black;
+  margin-top: 20px;
+}
+.icon-sec{
+    font-size: 20px;
+	display: flex;
+    flex-direction: row;
+	gap:20px;
+	align-items:center;
+}
+.icon-sec a {
+font-size:30px;
+font-weight:500
+text-align:center;
+}
+.icon-sec a :hover{
+color:beige;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="header">
+  <h1>Fashion first</h1>
+  <p style="font-weight:600; font-size:19px;">Your own fashion stop.</p>
+</div>
+
+<div class="topnav">
+  <a href="#">MEN</a>
+  <a href="#">WOMEN</a>
+  <a href="#">KIDS</a>
+  <a href="#" style="float:right"><form>
+<i class="fa fa-search" aria-hidden="true"></i>
+  <input type="text" name="search" placeholder="Search..">
+</form></a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>NEW ARRIVALS</h2>
+      <h5>SALE STARTS JULY 30, 4PM ONWARDS</h5>
+      <div class="fakeimg" style="height:fit-content;"><img src="C:\Users\meenu\OneDrive\Desktop\ssipmt\image\Untitled-design-38-1.jpg"></div>
+      <p>..grab now!!</p>
+      <p>Have a look at the new deals in the town!! shop now so you dont miss giving the main character vibes everywhere you go.</p>
+    </div>
+    <div class="card">
+      <h2>RAINY SEASON DEALS!!</h2>
+      <h5>LPVE NOW!! ENDS ON JULY 30 8PM</h5>
+      <div class="fakeimg" style="height:fit-content;"><img src="C:\Users\meenu\OneDrive\Desktop\ssipmt\image\Picture7.jpg" style="width:700px"></div>
+      <p>Monsoon sale..</p>
+      <p>Sale is live!! best deals all around here dont ,iss aor new monsoon collection fill up your wardrobe with vibrant peices</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>SIGNATURE PEICES</h2>
+      <div class="fakeimg" style="height:fit-content;"><img src="C:\Users\meenu\OneDrive\Desktop\ssipmt\image\Picture4.jpg"></div>
+      <p>looking for a signature peice that is all about you here you have it..</p>
+    </div>
+    <div class="card">
+      <h3>Popular</h3>
+      <div class="fakeimg"><img src="C:\Users\meenu\OneDrive\Desktop\ssipmt\image\Picture10.png"><p style="color:cornsilk;">Traditional</p></div>
+      <div class="fakeimg"><img src="C:\Users\meenu\OneDrive\Desktop\ssipmt\image\Picture9.png"><p style="color:cornsilk;">Casual</p></div>
+      <div class="fakeimg"><img src="C:\Users\meenu\OneDrive\Desktop\ssipmt\image\Picture8.jpg"><p style="color:cornsilk;">Formal</p></div>
+    </div>
+    <div class="card" Style="height:146px">
+      <h3>Follow us</h3>
+      <div class="icon-sec">
+<a href="#" style="color:purple;">
+<i class="fa fa-instagram" aria-hidden="true"></i>
+</a><br><br>
+<a href="#" style="color:lightblue;">
+<i class="fa fa-twitter" aria-hidden="true"></i>
+</a><br><br>
+<a href="#" style="color:blue;">
+<i class="fa fa-facebook-official" aria-hidden="true"></i>
+</a>
+</div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2 style="color:white;">All rights reserved to @fashionfirst</h2>
+</div>
+
+</body>
+</html>
